@@ -52,4 +52,11 @@
             </plugins>
         </pluginManagement>
     </build>
+         
+<configuration>
+    <suiteXmlFiles>
+        <suiteXmlFile>src/testng.xml</suiteXmlFile>
+    </suiteXmlFiles>
+</configuration>
+
 </project>
