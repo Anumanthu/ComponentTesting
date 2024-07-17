@@ -7,11 +7,14 @@
     </listeners>
 
     <test thread-count="5" name="SampleDemo">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
         <classes>
             <class name="org.blackline.Day1"/>
            <!-- <class name="org.blackline.Day2"/>-->
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
-
-
