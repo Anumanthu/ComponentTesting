@@ -9,7 +9,7 @@
     <test thread-count="5" name="SampleDemo">
         <groups>
             <run>
-                <include name="regression"/>
+                <include name="Regression"/>
             </run>
         </groups>
         <classes>
