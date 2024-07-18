@@ -20,7 +20,7 @@ public class Day1 {
 
     }
 
-    @Test
+    @Test(groups={"Regression"})
     public void Demo() throws InterruptedException {
 
         //WebDriverManager.chromedriver().clearDriverCache().setup();
