@@ -50,6 +50,13 @@
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v126 -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools-v126</artifactId>
+            <version>4.22.0</version>
+        </dependency>
+
 
         <!-- Cucumber Java -->
         <dependency>
