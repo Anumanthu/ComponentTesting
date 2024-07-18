@@ -43,8 +43,9 @@ public class Day1 {
         //options.addArguments("--allowed-ips=192.168.1.10");
 
         //WebDriverManager.chromedriver().browserVersion("126.0.6478.183").setup();
-      /*  System.setProperty("webdriver.chrome.driver",
-                "C:\\Users\\1018546\\Desktop\\Selenium Learning\\chromedriver.exe");*/
+       /* System.setProperty("webdriver.chrome.driver",
+                System.getProperty("user.dir")+"\\src\\chromedriver.exe");*/
+        //System.out.println("path is "+System.getProperty("user.dir")+"\\src\\chromedriver.exe");
         //Thread.sleep(5000);
         // WebDriver driver=new FirefoxDriver();
         WebDriverManager.chromedriver().setup();
@@ -52,10 +53,9 @@ public class Day1 {
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-
         driver.get("http://www.flipkart.com");
-        //Search for the product
 
+        //Search for the product
         Thread.sleep(3000);
         driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Blackline Mobile"+ Keys.ENTER);
         String actualTitle=driver.getTitle();
@@ -82,13 +82,13 @@ public class Day1 {
         //options.addArguments("--allowed-ips=192.168.1.10");
 
         //WebDriverManager.chromedriver().browserVersion("126.0.6478.183").setup();
-      /*  System.setProperty("webdriver.chrome.driver",
-                "C:\\Users\\1018546\\Desktop\\Selenium Learning\\chromedriver.exe");*/
+       /* System.setProperty("webdriver.chrome.driver",
+                System.getProperty("user.dir")+"\\src\\chromedriver.exe");
+        System.out.println("path is "+System.getProperty("user.dir")+"\\src\\chromedriver.exe");*/
         //Thread.sleep(5000);
         // WebDriver driver=new FirefoxDriver();
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
