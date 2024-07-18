@@ -29,6 +29,7 @@ public class Day1 {
         //WebDriverManager.chromedriver().clearDriverCache().setup();
         //WebDriverManager.chromedriver().clearResolutionCache().setup();
         ChromeOptions options = new ChromeOptions();
+        options.setHeadless(false);
         options.addArguments("--disable-web-security");
         options.addArguments("--allow-running-insecure-content");
         options.addArguments("--no-sandbox");
@@ -36,6 +37,8 @@ public class Day1 {
         options.addArguments("--remote-debugging-port=9222");
         options.addArguments("--disable-site-isolation-trials");
         options.addArguments("--remote-allow-origins=*");
+
+        //options.addArguments("--headless");
         //options.addArguments("--disable-gpu"); // Disable GPU acceleration
         //options.addArguments("--allowed-ips=192.168.1.10");
 
@@ -46,6 +49,7 @@ public class Day1 {
         // WebDriver driver=new FirefoxDriver();
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
@@ -66,6 +70,7 @@ public class Day1 {
         //WebDriverManager.chromedriver().clearDriverCache().setup();
         //WebDriverManager.chromedriver().clearResolutionCache().setup();
         ChromeOptions options = new ChromeOptions();
+        options.setHeadless(false);
         options.addArguments("--disable-web-security");
         options.addArguments("--allow-running-insecure-content");
         options.addArguments("--no-sandbox");
@@ -73,6 +78,7 @@ public class Day1 {
         options.addArguments("--remote-debugging-port=9222");
         options.addArguments("--disable-site-isolation-trials");
         options.addArguments("--remote-allow-origins=*");
+        //options.addArguments("--headless");
         //options.addArguments("--allowed-ips=192.168.1.10");
 
         //WebDriverManager.chromedriver().browserVersion("126.0.6478.183").setup();
@@ -82,6 +88,7 @@ public class Day1 {
         // WebDriver driver=new FirefoxDriver();
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
