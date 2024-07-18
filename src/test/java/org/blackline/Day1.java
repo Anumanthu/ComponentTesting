@@ -50,7 +50,6 @@ public class Day1 {
         // WebDriver driver=new FirefoxDriver();
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("http://www.flipkart.com");
