@@ -36,6 +36,8 @@ public class Day1 {
         options.addArguments("--remote-debugging-port=9222");
         options.addArguments("--disable-site-isolation-trials");
         options.addArguments("--remote-allow-origins=*");
+         //options.addArguments("--headless"); // Ensure tests run in headless mode
+         options.addArguments("--disable-gpu"); // Disable GPU acceleration
         //options.addArguments("--allowed-ips=192.168.1.10");
 
         //WebDriverManager.chromedriver().browserVersion("126.0.6478.183").setup();
