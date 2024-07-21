@@ -37,7 +37,7 @@ public class Day1 {
         options.addArguments("--remote-debugging-port=9222");
         options.addArguments("--disable-site-isolation-trials");
         options.addArguments("--remote-allow-origins=*");
-        options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+        
 
         //options.addArguments("--headless");
         //options.addArguments("--disable-gpu"); // Disable GPU acceleration
@@ -78,7 +78,7 @@ public class Day1 {
         options.addArguments("--remote-debugging-port=9222");
         options.addArguments("--disable-site-isolation-trials");
         options.addArguments("--remote-allow-origins=*");
-        options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+        
         //options.addArguments("--headless");
         //options.addArguments("--allowed-ips=192.168.1.10");
 
