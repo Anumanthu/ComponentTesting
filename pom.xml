@@ -76,7 +76,7 @@
 
     <profiles>
         <profile>
-            <id>FlipKar</id>
+            <id>FlipKart</id>
             <build>
                 <plugins>
                     <plugin>
