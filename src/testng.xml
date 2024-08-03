@@ -7,15 +7,18 @@
     </listeners>
 
     <test thread-count="5" name="SampleDemo">
+        <parameter name="browser" value="chrome"/>
         <groups>
             <run>
                 <include name="Regression"/>
                 <include name="FlipKart"/>
+                <exclude name="Smoke"/>
             </run>
         </groups>
         <classes>
             <class name="org.blackline.Day1"/>
            <!-- <class name="org.blackline.Day2"/>-->
+            <class name="org.blackline.DataProviderTest"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
